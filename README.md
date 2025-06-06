@@ -41,3 +41,23 @@ Prediction maps highlight high-risk deforestation zones with strong spatial patt
 
 🌍 Impact
 This project demonstrates how data science and machine learning can be applied to environmental protection. The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
+
+Files:
+1. Dado principal (label / target):
+✅ Incremento anual no desmatamento - Shapefile (2008/2023)
+→ Esse arquivo mostra onde e quando houve novo desmatamento a cada ano.
+Ele será usado como target (rótulo): desmatado (sim/não) por ano.
+
+📍 2. Dados espaciais que ajudam como variáveis explicativas (features)
+✅ Hidrografia - Shapefile
+→ Distância de rios pode influenciar acesso à área e probabilidade de desmatamento.
+
+✅ Não floresta - Shapefile
+→ Útil para filtrar áreas que não são floresta, e focar só no que pode ser desmatado.
+
+✅ PRODES completo em formato vetorial - GeoPackage (2007-2023)
+→ Mais detalhado e completo; você pode extrair todas as áreas de floresta existentes, não só os incrementos.
+
+✅ Máscara de área acumulada de supressão da vegetação nativa - Shapefile (2007)
+→ Mostra tudo que já foi desmatado até 2007. Pode ser útil para comparar áreas novas vs antigas.
+
