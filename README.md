@@ -42,7 +42,7 @@ Prediction maps highlight high-risk deforestation zones with strong spatial patt
 🌍 Impact
 This project demonstrates how data science and machine learning can be applied to environmental protection. The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
 
-Files:
+Some files sourcee:
 1. Dado principal (label / target):
 ✅ Incremento anual no desmatamento - Shapefile (2008/2023)
 → Esse arquivo mostra onde e quando houve novo desmatamento a cada ano.
@@ -60,4 +60,11 @@ Ele será usado como target (rótulo): desmatado (sim/não) por ano.
 
 ✅ Máscara de área acumulada de supressão da vegetação nativa - Shapefile (2007)
 → Mostra tudo que já foi desmatado até 2007. Pode ser útil para comparar áreas novas vs antigas.
+
+Global Forest Watch API (WRI)
+Dados globais de desmatamento (GLAD alerts, perda de cobertura florestal)
+
+Link: https://data.globalforestwatch.org/
+
+API: https://developers.globalforestwatch.org/
 
