@@ -44,12 +44,12 @@ This project demonstrates how data science and machine learning can be applied t
 
 Some files sourcee:
 1. Dado principal (label / target):
-✅ Incremento anual no desmatamento - Shapefile (2008/2023)
+Incremento anual no desmatamento - Shapefile (2008/2023)
 → Esse arquivo mostra onde e quando houve novo desmatamento a cada ano.
 Ele será usado como target (rótulo): desmatado (sim/não) por ano.
 
 2. Dados espaciais que ajudam como variáveis explicativas (features)
-✅ Hidrografia - Shapefile
+Hidrografia - Shapefile
 → Distância de rios pode influenciar acesso à área e probabilidade de desmatamento.
 
 ✅ Não floresta - Shapefile
