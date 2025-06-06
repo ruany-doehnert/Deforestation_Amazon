@@ -48,7 +48,7 @@ Some files sourcee:
 → Esse arquivo mostra onde e quando houve novo desmatamento a cada ano.
 Ele será usado como target (rótulo): desmatado (sim/não) por ano.
 
-📍 2. Dados espaciais que ajudam como variáveis explicativas (features)
+2. Dados espaciais que ajudam como variáveis explicativas (features)
 ✅ Hidrografia - Shapefile
 → Distância de rios pode influenciar acesso à área e probabilidade de desmatamento.
 
