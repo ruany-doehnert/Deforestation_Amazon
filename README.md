@@ -68,3 +68,8 @@ Link: https://data.globalforestwatch.org/
 
 API: https://developers.globalforestwatch.org/
 
+website: https://resourcewatch.org/
+
+Google Earth Engine:
+https://developers.google.com/earth-engine/guides/getstarted
+
