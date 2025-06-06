@@ -1,4 +1,4 @@
-# Deforestation_Amazon
+# Deforestation Amazon
 🌳 Deforestation Prediction using Machine Learning
 This project applies supervised machine learning techniques to predict areas at risk of deforestation in the Amazon rainforest. The goal is to use spatial and environmental data to proactively identify regions likely to be deforested in the near future, helping support conservation and policy decision-making.
 
