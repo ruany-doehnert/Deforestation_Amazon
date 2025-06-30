@@ -73,7 +73,7 @@ website: https://resourcewatch.org/
 Google Earth Engine:
 https://developers.google.com/earth-engine/guides/getstarted
 
-# Alternative and Additional Datasets
+#### Alternative and Additional Datasets
 Global Forest Change (Hansen et al.)
 UMD/hansen/global_forest_change_2022_v1_10
 Contains annual forest loss/gain, tree cover, and more. Useful for labeling and validation.
