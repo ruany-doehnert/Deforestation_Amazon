@@ -73,3 +73,24 @@ website: https://resourcewatch.org/
 Google Earth Engine:
 https://developers.google.com/earth-engine/guides/getstarted
 
+# Alternative and Additional Datasets
+Global Forest Change (Hansen et al.)
+UMD/hansen/global_forest_change_2022_v1_10
+Contains annual forest loss/gain, tree cover, and more. Useful for labeling and validation.
+
+PRODES (INPE Amazon Deforestation Monitoring)
+projects/mapbiomas-workspace/AUX_MATRIZ/PRODES_2022
+Official Brazilian deforestation data, great for ground truth.
+
+MapBiomas Land Cover & Use
+projects/mapbiomas-workspace/public/collection7/mapbiomas_collection70_integration_v1
+Annual land cover/use maps for Brazil, can help with multi-class classification (e.g., pasture, agriculture, forest).
+
+Sentinel-2 Imagery
+COPERNICUS/S2_SR
+Higher resolution (10m), useful for more detailed features or smaller clearings.
+
+MODIS Vegetation Indices
+MODIS/006/MOD13Q1
+For time-series analysis and trend detection.
+
