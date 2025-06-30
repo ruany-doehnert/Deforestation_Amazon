@@ -94,3 +94,7 @@ MODIS Vegetation Indices
 MODIS/006/MOD13Q1
 For time-series analysis and trend detection.
 
+Notebook 1: Data sourcing, feature engineering, and export.
+Notebook 2: Model training, evaluation, and visualization.
+Notebook 3 (optional): Time-series analysis or prediction for future years.
+
