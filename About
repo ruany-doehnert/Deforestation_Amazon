@@ -1,0 +1,17 @@
+🌎 Fighting Amazon Deforestation with Machine Learning & Satellite Data
+
+I recently built a machine learning pipeline using Google Earth Engine and open satellite data to detect and predict Amazon deforestation, aiming to support conservation efforts and data-driven decision-making.
+
+My workflow included:
+
+Data sourcing: Leveraging Google Earth Engine and open datasets (Hansen Global Forest Change, Landsat, SRTM).
+Feature engineering: Creating indices like NDVI and NBR, and extracting elevation data.
+Model training & evaluation: Using Random Forests to classify forest/non-forest, handling class imbalance, and evaluating with accuracy and confusion matrices.
+Visualization: Mapping predicted deforestation risk and analyzing trends over time.
+Key results:
+
+Generated maps highlighting areas at risk of deforestation.
+Demonstrated a workflow that can be adapted for other regions or conservation challenges.
+🔗 Check out my GitHub repository for code, notebooks, and sample results!
+
+I’m open to feedback and collaboration with researchers, NGOs, and data scientists passionate about environmental protection and remote sensing. Let’s connect!
