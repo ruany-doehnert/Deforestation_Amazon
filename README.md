@@ -4,6 +4,12 @@ This project demonstrates a complete workflow for predicting and analyzing Amazo
 
 ---
 
+Author: Ruany Doehnert
+Date: July 2025
+
+This notebook extracts and processes satellite imagery features for 
+Amazon deforestation prediction using Google Earth Engine.
+
 ## 🚀 Project Overview
 
 The goal of this project is to build a machine learning model that can classify forest and non-forest areas in the Amazon, and use it to analyze and predict future deforestation scenarios. The workflow includes:
