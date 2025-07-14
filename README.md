@@ -5,6 +5,7 @@ This project demonstrates a complete workflow for predicting and analyzing Amazo
 ---
 
 Author: Ruany Doehnert
+
 Date: July 2025
 
 This notebook extracts and processes satellite imagery features for 
