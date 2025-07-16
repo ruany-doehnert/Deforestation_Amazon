@@ -26,6 +26,12 @@ The goal of this project is to build a machine learning model that can classify 
 ## 🌱 Motivation
 Deforestation in the Amazon has a critical impact on biodiversity, climate change, and local communities. By using Machine Learning, we can create tools to support early detection and prevention strategies, contributing to sustainable development and environmental protection.
 
+---
+🌍 Impact
+This project demonstrates how data science and machine learning can be applied to environmental protection. 
+The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
+---
+
 ## 📦 Data Sources
 
 - **Hansen Global Forest Change v1.10**  
@@ -73,19 +79,62 @@ Deforestation in the Amazon has a critical impact on biodiversity, climate chang
 
 ---
 
-## 🖼️ Example Results
+## 🎯 Key Results
+| Metric | Value | Importance for Conservation |
+|--------|-------|----------------------------|
+| 🌳 **Forest Recall** | **90%** | 🥇 Catches 9/10 deforestation events |
+| 🏞️ **Non-Forest Precision** | **89%** | 🥈 Low false alarms for teams |
+| 🎯 **Overall Accuracy** | **87.6%** | 🏆 Professional grade |
+| 📊 **Overfitting Gap** | **0.7%** | ✅ Excellent generalization |
 
-- **Confusion matrix** and classification report for model evaluation.
-- **Bar and line charts** showing predicted forest area percentage over time.
+- **87.6% Accuracy** with 0.7% overfitting gap
+- **90% Forest Recall** - catches 9/10 deforestation events  
+- **Production-ready** pipeline without data leakage
+- **Portfolio-quality** code demonstrating professional ML practices
+
+[📈 **Detailed Performance Analysis**](PERFORMANCE_ANALYSIS.md)
 
 ---
 
+## 🌍 Business Impact
+Optimized for Brazil forest conservation with emphasis on early deforestation detection.
+
+---
+## 🛠️ Technologies
+Python | Google Earth Engine | Scikit-learn | Random Forest | Satellite Imagery
+
+---
+
+## 💡 Technical Highlights
+- Fixed data leakage (treecover variable removal)
+- Google Earth Engine integration
+- Professional Random Forest optimization
+- Brazil conservation-focused metrics
+
+---
 ## 💡 Next Steps & Improvements
 
-- Incorporate more features (e.g., texture, proximity to roads).
-- Use real or scenario-based land use change rates for future projections.
-- Expand region of interest and increase sample size.
-- Experiment with other ML algorithms and hyperparameter tuning.
+### 🔬 **Model Enhancement**
+- [ ] **Hyperparameter Optimization**: Use GridSearchCV to fine-tune Random Forest parameters
+- [ ] **Advanced Models**: Test XGBoost, LightGBM for potential performance gains  
+- [ ] **Threshold Optimization**: Adjust classification threshold to maximize forest recall (target: 95%+)
+
+### 📊 **Feature Engineering** 
+- [ ] **Temporal Features**: Add seasonal patterns and time-based variables
+- [ ] **Derived Indices**: Create custom vegetation indices (EVI, SAVI, MSAVI)
+- [ ] **Multi-temporal Analysis**: Compare current vs historical satellite data
+
+### 🚀 **Production Deployment**
+- [ ] **Real-time Pipeline**: Build automated data processing from Google Earth Engine
+- [ ] **API Development**: Create REST API for model predictions
+- [ ] **Web Dashboard**: Interactive monitoring dashboard for conservationists
+
+### 🌍 **Geographic Scaling**
+- [ ] **Regional Models**: Create region-specific models (Cerrado, Atlantic Forest)
+- [ ] **Cross-Border Analysis**: Extend to neighboring countries (Peru, Colombia)
+- [ ] **Protected Areas Focus**: Specialized models for conservation units
+
+> **Portfolio Focus**: Implementing 2-3 of these improvements would demonstrate both technical depth and business acumen to potential employers! 🚀
 
 ---
 
@@ -97,11 +146,9 @@ Deforestation in the Amazon has a critical impact on biodiversity, climate chang
 ---
 
 **Feel free to fork, use, and improve this project!  
-Questions or suggestions? Open an issue or connect with me on [LinkedIn](https://www.linkedin.com/).**
+Questions or suggestions? Open an issue or connect with me on [LinkedIn](https://www.linkedin.com/in/ruany-doehnert-83092558/).**
 
-🌍 Impact
-This project demonstrates how data science and machine learning can be applied to environmental protection. 
-The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
+
 
 Google Earth Engine:
 https://developers.google.com/earth-engine/guides/getstarted
