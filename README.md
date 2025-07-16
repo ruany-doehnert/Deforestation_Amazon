@@ -28,8 +28,9 @@ Deforestation in the Amazon has a critical impact on biodiversity, climate chang
 
 ---
 🌍 Impact
-This project demonstrates how data science and machine learning can be applied to environmental protection. 
-The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
+
+This projetc demonstrates how data science and machine learning can be applied to enviromental protection. The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
+
 ---
 
 ## 📦 Data Sources
