@@ -27,20 +27,25 @@ The goal of this project is to build a machine learning model that can classify 
 Deforestation in the Amazon has a critical impact on biodiversity, climate change, and local communities. By using Machine Learning, we can create tools to support early detection and prevention strategies, contributing to sustainable development and environmental protection.
 
 ---
-🌍 Impact
+## 🌍 Impact
 
-This projetc demonstrates how data science and machine learning can be applied to enviromental protection. The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
+This project demonstrates how data science and machine learning can be applied to environmental protection. The methodology can be extended to other biomes or conservation problems and can assist NGOs, researchers, or public agencies in identifying areas of concern more efficiently.
 
 ---
 
 ## 📦 Data Sources
 
-- **Hansen Global Forest Change v1.10**  
-  [`UMD/hansen/global_forest_change_2022_v1_10`](https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2022_v1_10)
-- **Landsat 8 Surface Reflectance**  
-  [`LANDSAT/LC08/C02/T1_L2`](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2)
-- **SRTM Elevation**  
-  [`USGS/SRTMGL1_003`](https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003)
+### **Active in Clean Model (87.6% Accuracy):**
+- **Landsat 8 Surface Reflectance** [`LANDSAT/LC08/C02/T1_L2`]
+  - NDVI (Normalized Difference Vegetation Index)
+  - NBR (Normalized Burn Ratio)
+- **SRTM Elevation** [`USGS/SRTMGL1_003`]
+  - Topographic elevation data
+
+### **Used for Labeling Only:**
+- **Hansen Global Forest Change v1.10** [`UMD/hansen/global_forest_change_2022_v1_10`]
+  - Creates forest/non-forest labels (treecover > 30%)
+  - Removed from features to prevent data leakage
 
 ---
 
@@ -63,11 +68,20 @@ This projetc demonstrates how data science and machine learning can be applied t
 
 ## 🤖 Model Training & Evaluation (Notebook 2)
 
-- Load the exported dataset.
-- Handle class imbalance (downsampling/upsampling).
-- Train a Random Forest classifier using `treecover`, `NDVI`, `NBR`, and `elevation`.
-- Evaluate with accuracy, confusion matrix, and classification report.
-- Save the trained model and predictions to Google Drive.
+- Load the exported dataset (2,000 samples from Amazon region)
+- **Data Leakage Discovery**: Initial model achieved suspicious 100% accuracy
+- **Problem Resolution**: Identified treecover as both feature and label source
+- **Clean Model Development**: Removed treecover from features, retained for labeling
+- Train Random Forest classifier using **NDVI, NBR, elevation only**
+- Achieve realistic **87.6% accuracy** with excellent **90% forest recall**
+- Comprehensive evaluation with confusion matrix and business-focused metrics
+- Save clean model and predictions to Google Drive
+
+### 🔍 **Data Leakage Resolution**
+- **Problem**: Original model included `treecover` as both feature and label source
+- **Solution**: Removed `treecover` from features, kept for labeling only  
+- **Result**: Accuracy dropped from 100% (suspicious) to 87.6% (realistic)
+- **Impact**: Model now generalizes properly without data leakage
 
 ---
 
@@ -98,7 +112,19 @@ This projetc demonstrates how data science and machine learning can be applied t
 ---
 
 ## 🌍 Business Impact
-Optimized for Brazil forest conservation with emphasis on early deforestation detection.
+
+**Environmental Protection**: Model optimized for Brazil forest conservation with emphasis on early deforestation detection.
+
+### 🎯 **Conservation Applications**
+- **Early Warning System**: 90% forest recall enables rapid response to deforestation
+- **Resource Optimization**: 89% precision reduces false alarms and wasted field investigations  
+- **Policy Support**: Data-driven insights for environmental policy decisions
+- **Carbon Monitoring**: Framework adaptable for carbon credit verification
+
+### 💰 **Economic Value**
+- **Prevention > Restoration**: Early detection costs significantly less than reforestation
+- **Compliance Monitoring**: Automated tracking of environmental regulations
+- **Risk Assessment**: Identify high-risk deforestation areas for targeted protection
 
 ---
 ## 🛠️ Technologies
@@ -137,19 +163,33 @@ Python | Google Earth Engine | Scikit-learn | Random Forest | Satellite Imagery
 
 > **Portfolio Focus**: Implementing 2-3 of these improvements would demonstrate both technical depth and business acumen to potential employers! 🚀
 
----
-
-## 📚 License & Acknowledgments
-
-- Data sources are publicly available via Google Earth Engine.
-- Project for educational and research purposes.
 
 ---
+## 📁 Project Structure
 
-**Feel free to fork, use, and improve this project!  
-Questions or suggestions? Open an issue or connect with me on [LinkedIn](https://www.linkedin.com/in/ruany-doehnert-83092558/).**
+```
+amazon-deforestation-ml/
+├── 📄 README.md                           # Project overview & results
+├── 📊 PERFORMANCE_ANALYSIS.md             # Detailed metrics & business impact
+├── 📁 notebooks/
+│   ├── 01_data_source.ipynb               # Google Earth Engine data extraction
+│   ├── 02_ml_amazon_model_28.ipynb        # ML pipeline & evaluation  
+│   └── 03_time_series_analysis.ipynb      # Future predictions & trends
+├── 📁 data/                               # Training datasets
+├── 📄 requirements.txt                    # Python dependencies
+└── 📄 .gitignore                          # Git ignore file
+```
 
 
+
+
+---
+
+Notebook 1 (data_source): Data sourcing, feature engineering, and export.
+Notebook 2 (ml_amazon_model_28): Model training, evaluation, and visualization.
+Notebook 3 (time_series_analysis): Time-series analysis or prediction for future years.
+
+---
 
 Google Earth Engine:
 https://developers.google.com/earth-engine/guides/getstarted
@@ -177,7 +217,13 @@ For time-series analysis and trend detection.
 
 ---
 
-Notebook 1 (data_source): Data sourcing, feature engineering, and export.
-Notebook 2 (ml_amazon_model_28): Model training, evaluation, and visualization.
-Notebook 3 (time_series_analysis): Time-series analysis or prediction for future years.
+## 📚 License & Acknowledgments
+
+- Data sources are publicly available via Google Earth Engine.
+- Project for educational and research purposes.
+
+---
+
+**🌟 Star this repo if it helped you! Feel free to fork and improve.**  
+Questions or suggestions? Open an issue or connect with me on [LinkedIn](https://www.linkedin.com/in/ruany-doehnert-83092558/).**
 
